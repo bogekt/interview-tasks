@@ -1,0 +1,86 @@
+html {
+  background-color: #3e434e;
+  background-image: url('https://images.unsplash.com/photo-1465101162946-4377e57745c3');
+  /* Full height */
+  min-height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+footer { 
+  position: fixed;
+  bottom: 0;
+}
+
+a {
+  color: rgb(97, 218, 251);
+}
+
+/* https://codepen.io/MathieuRichard/pen/LrHeD */
+.loader {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.loader .loader-inner {
+  position: relative;
+  height: 2px;
+  width: 500px;
+  margin: 0 auto;
+  background: #000;
+  margin-top: 150px;
+}
+
+.loader .circle {
+  position: absolute;
+  top: -30px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #000;
+  border-radius: 30%;
+  animation: move 2s infinite;
+  -webkit-animation: move 2s infinite;
+}
+
+.loader p {
+  position: absolute;
+  top: -35px;
+  right: -85px;
+  text-transform: uppercase;
+  color: rgb(97, 218, 251);
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@keyframes move {
+  0% {left: 0;}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  100% {right: 100%; }
+}
+
+@-webkit-keyframes move {
+  0% {left: 0;}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  100% {right: 100%; }
+}
